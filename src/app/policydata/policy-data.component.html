@@ -1,0 +1,32 @@
+<nav class="navbar navbar-light bg-primary">
+  <div class="container-fluid">
+    <h1 style="color: aliceblue">Policy Data</h1>
+    <div class="d-flex">
+      <button routerLink="/addpolicy" class="btn btn-success">Add Policy</button>
+    </div>
+  </div>
+</nav>
+<table class="table mt-3">
+  <thead>
+  <tr>
+    <th scope="col">Id</th>
+    <th scope="col">Policy</th>
+    <th scope="col">Name</th>
+    <th scope="col">LastName</th>
+    <th scope="col">Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let data of newData">
+    <td>{{data.id}}</td>
+    <td id="policyNumber" style="cursor: pointer" (click)="editRouter(data)">{{data.policyNumber}}</td>
+    <td>{{data.firstName}}</td>
+    <td>{{data.lastName}}</td>
+    <td>
+      <button (click)="editRouter(data)" class="btn btn-info">Edit</button>
+      <button (click)="deletePolicy(data.id)" class="btn btn-danger mx-3">Delete</button>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
