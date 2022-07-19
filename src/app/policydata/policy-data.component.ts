@@ -33,7 +33,7 @@ export class PolicyDataComponent implements OnInit {
     })
   }
 
-//commentg
+//commentgas
   editRouter(data: any) {
     console.log("editable data is " + JSON.stringify(data))
     let navigationExtras: NavigationExtras = {
