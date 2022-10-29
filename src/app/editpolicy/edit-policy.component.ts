@@ -4,10 +4,10 @@ import {HttpClient} from "@angular/common/http";
 
 @Component({
   selector: 'app-editpolicy',
-  templateUrl: './editpolicy.component.html',
-  styleUrls: ['./editpolicy.component.css']
+  templateUrl: './edit-policy.component.html',
+  styleUrls: ['./edit-policy.component.css']
 })
-export class EditpolicyComponent implements OnInit {
+export class EditPolicyComponent implements OnInit {
   policyNumber: any;
   firstName: any;
   lastName: any;
